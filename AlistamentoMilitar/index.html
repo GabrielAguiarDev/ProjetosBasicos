@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alistamento Militar</title>
+    <link rel="stylesheet" href="alistamento.css">
+</head>
+<body>
+    <header>
+        <h1>
+             Alistamento Militar
+        </h1>
+    </header>
+    <section>
+        <p id="topgun">
+                &
+            </p>
+            <h2>
+                 Candidato:
+            </h2>
+            <p id="topgun">
+                &
+            </p>
+        <div id="principal">
+            
+           <p> Nome completo:
+               <input type="text" name="txtnome" id="txtnome">
+            </p>
+           <p>Ano de nascimento: 
+               <input type="number" name="anonasc" id="ano">
+            </p>
+            <p>CPF: 
+                <input type="text" value="" id="cpf" placeholder="000.000.000-00">
+            </p>
+            <p>Ensino médio: 
+                <input type="radio" name="ensino" id="comp" checked>
+                <label for="comp">completo</label>
+                <input type="radio" name="ensino" id="pend">
+                <label for="pend">Pendente</label>
+            </p>
+           <p>É filho único? 
+               <input type="radio" name="filhouni" id="fsim">
+               <label for="fsim">Sim</label>
+               <input type="radio" name="filhouni" id="fnao" checked>
+               <label for="fnao">Não</label>
+            </p>
+            <p>Tem o desejo de Servir? 
+                <input type="radio" name="servir" id="ssim" checked>
+                <label for="ssim">Sim</label>
+                <input type="radio" name="servir" id="snao">
+                <label for="snao">Não</label>
+            </p>
+            <p>
+                <input type="button" value="enviar" onclick="enviar()" id="botao">
+            </p>
+            <div id="armas">
+                <p>
+                   x
+                </p>
+            </div>
+        </div>
+        <div id="nick" >
+        
+        </div>
+        <div id="res">
+
+        </div>
+        <div id="divfoto">
+            <img id="bandeira" src="imagens/bandeira-g.jpg" alt="Bandeira-do-Brasil">
+        </div>
+    </section>
+    <script src="alistamento.js"></script>
+    
+
+    <footer>
+        &copy; Gabriel Aguiar
+    </footer>
+</body>
+</html>

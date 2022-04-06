@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/icon-money.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/5ec12e7858.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="conversor.css">
+    <script src="conversor.js"></script>
+    <title>Conversor de Moedas</title>
+</head>
+<body>
+    <section>
+        <h1>Conversor de Moedas</h1>
+        <div id="paises"> 
+            <img id="imagens" src="" alt="">
+        </div>
+        <div>
+            <label for="moeda" class="principal">Moeda :</label>
+            <select id="opcoes">
+                <option selected disabled value="">Selecione</option>
+                <option value="dolarAmericano">Dólar Americano</option>
+                <option value="dolarCanadense">Dólar Canadense</option>
+                <option value="dolarAustraliano">Dólar Australiano</option>
+                <option value="libraEsterlina">Libra esterlina</option>
+                <option value="euro">Euro</option>
+                <option value="iene">Iene</option>
+                <option value="francoSuico">Franco suíço</option>
+                <option value="ouro">Ouro</option>
+            </select>
+        </div>
+             
+            <div id="valores">
+                <label type="number" for="valor" class="principal" id="atribuirvalor">Valor :  <span class="txtvalor"></span></label>
+
+                <input type="text" name="valor" id="valor" placeholder="Digite o valor" class="valor" autocomplete="off"  onkeypress='event.charCode >= 48 && event.charCode <= 57'>
+            </div>
+            <a href="#" class="botao" onclick="Converter()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Converter
+            </a>
+            <div id="resultado">
+                <div id="valorEmReais"></div>
+            </div>
+            </div>
+     
+            <div id="reset">
+                <class class="fas fa-redo-alt" onClick="window.location.reload();"></class></button></i>
+            </div>
+    </section>
+    <footer>
+            <div class="coin">
+                <i class="fab fa-bitcoin"></i>
+                <div class="caixa">
+                    <p class="info">
+                            <strong>Bitcoin:</strong> atualmente 1 bitcoin vale
+                            <strong class="txtvalor">R$ 235.430,49</strong>
+                    </p> 
+                </div>
+            </div>
+    </footer>
+    <div id="data">Data da cotação: 26/09/2021</div>
+</body>
+</html>
